@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.liaotian_test2.MainActivity">
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:background="#ebebeb"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></ListView>
+
+    <FrameLayout
+        android:background="#fff"
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.bwie.liaotian_test2.View.AudioRecorderButton
+            android:minHeight="0dp"
+            android:id="@+id/audio_button"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textSize="20sp"
+            android:textColor="#727272"
+            android:background="@drawable/btn_normal"
+            android:text="@string/str_recorder_normal"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </FrameLayout>
+</LinearLayout>
